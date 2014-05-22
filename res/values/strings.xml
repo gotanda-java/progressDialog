@@ -2,6 +2,7 @@
 <resources>
 
     <string name="app_name">DialogSample</string>
+    <string name="app_name1">Hack</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
 
@@ -12,6 +13,7 @@
     <string name="bt_datedialog">日付選択ダイアログ表示</string>
     <string name="bt_timedialog">時間選択ダイアログ表示</string>
     <string name="bt_progressdialog">プログレスバーダイアログ表示</string>
+    <string name="bt_hack">電話帳＆履歴</string>
 
 
     <string name="tv_message">-------</string>

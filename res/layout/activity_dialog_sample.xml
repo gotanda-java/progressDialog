@@ -40,11 +40,18 @@
         android:layout_height="wrap_content"
         android:text="@string/bt_progressdialog" />
 
+        <Button
+        android:id="@+id/bt_hack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/bt_hack" />
+
     <TextView
         android:id="@+id/tv_message"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="5dp"
         android:text="@string/tv_message" />
+
 
 </LinearLayout>

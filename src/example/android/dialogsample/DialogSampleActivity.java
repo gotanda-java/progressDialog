@@ -9,6 +9,7 @@ import android.app.DatePickerDialog;
 import android.app.ProgressDialog;
 import android.app.TimePickerDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -53,6 +54,10 @@ public class DialogSampleActivity extends Activity {
 		PDialogBtn.setTag("progressDialog");
 		PDialogBtn.setOnClickListener(new BCL());
 
+		Button hackDialogBtn = (Button) findViewById(R.id.bt_hack);
+		hackDialogBtn.setTag("hack");
+		hackDialogBtn.setOnClickListener(new BCL());
+
 	}
 
 	class BCL implements OnClickListener {
@@ -70,7 +75,16 @@ public class DialogSampleActivity extends Activity {
 				showTPDialog();
 			} else if (tag.equals("progressDialog")) {
 				showProgressDialog();
+			}else{
+				showhack();
 			}
+		}
+
+		private void showhack() {
+			//P214
+			// TODO 自動生成されたメソッド・スタブ
+		Intent intent = new Intent(DialogSampleActivity.this, ContentProviderSample2Activity.class);
+		startActivityForResult(intent, 0);
 		}
 
 		private void showDialog() {
@@ -230,6 +244,11 @@ public class DialogSampleActivity extends Activity {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.dialog_sample, menu);
 		return true;
+	}
+
+	public void ContentProviderSample2Activity() {
+		// TODO 自動生成されたメソッド・スタブ
+
 	}
 
 }
