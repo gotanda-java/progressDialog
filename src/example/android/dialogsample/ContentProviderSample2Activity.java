@@ -169,7 +169,7 @@ public class ContentProviderSample2Activity extends Activity {
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
-//		getMenuInflater().inflate(R.menu.content_provider_sample2, menu);
+		getMenuInflater().inflate(R.menu.content_provider_sample2, menu);
 		return true;
 	}
 
