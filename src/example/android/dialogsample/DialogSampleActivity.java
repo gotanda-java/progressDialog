@@ -233,7 +233,7 @@ public class DialogSampleActivity extends Activity {
 					}
 					dialog.dismiss();
 				}
-			});
+			}).start();
 
 		}
 
